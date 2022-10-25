@@ -118,12 +118,12 @@
       <section class="section sectionGaleriaFotos">
         <div>
           <h2>Galeria de Fotos</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat massa, et condimentum nunc. Praesent consectetur lorem in efficitur dictum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed lobortis egestas cursus. Vestibulum faucibus molestie est, ac efficitur ex ullamcorper a.</p>
+          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat massa, et condimentum nunc. Praesent consectetur lorem in efficitur dictum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed lobortis egestas cursus. Vestibulum faucibus molestie est, ac efficitur ex ullamcorper a.</p> -->
         </div>
         <div class="sectionGaleriaFotos__carrousel">
-          <img src="./assets/icon/leftMenu.svg" alt="">
-          <img src="./assets/img/index/galleryLeft.jpg" alt="Foto Galeria 1" class="galeriaFoto1">
-          <img src="./assets/icon/rightMenu.svg" alt="">
+          <img src="./assets/icon/leftMenu.svg" alt="flecha izquierda" class="flecha">
+          <img src="./assets/img/index/galleryCenter.jpg" alt="Foto Galeria 1" class="galeriaFoto1">
+          <img src="./assets/icon/rightMenu.svg" alt="flecha derecha" class="flecha">
           <!-- <img src="./assets/img/index/galleryCenter.jpg" alt="Foto Galeria 2">
           <img src="./assets/img/index/galleryRight.jpg" alt="Foto Galeria 3"> -->
 
@@ -134,25 +134,37 @@
         <h2>Reservas</h2>
 
         <form action="">
-          <label for="name" class="labels">Nombre</label>
-          <input type="text" name="name" id="name" class="inputs" placeholder="Alejandro">
+          <div class="formIndex">
+            <div class="divForm">
+              <label for="name" class="labels">Nombre</label>
+              <input type="text" name="name" id="name" class="inputs" placeholder="Alejandro">
+          </div>
 
-          <label for="number" class="labels">Telefofono</label>
-          <input type="text" name="number" id="number" class="inputs" placeholder="+ 54 9 299 xxxxxxx">
+            <div class="divForm">
+              <label for="number" class="labels">Telefofono</label>
+              <input type="text" name="number" id="number" class="inputs" placeholder="+ 54 9 299 xxxxxxx">
+            </div>
 
-          <label for="people" class="labels">Numero de personas</label>
-          <input type="number" name="people" id="people" class="inputs" placeholder="0">
+            <div class="divForm">
+              <label for="people" class="labels">Comensales</label>
+              <input type="number" name="people" id="people" class="inputs" placeholder="0">
+            </div>
 
-          <label for="date" class="labels">Fecha</label>
-          <input type="date" name="date" id="date" class="inputs" placeholder="">
+            <div class="divForm">
+              <label for="date" class="labels">Fecha</label>
+              <input type="date" name="date" id="date" class="inputs" placeholder="">
+            </div>
 
-          <label for="time" class="labels">Hora</label>
-          <input type="time"  name="time" id="time" class="inputs" placeholder="">
+            <div class="divForm">
+              <label for="time" class="labels">Hora</label>
+              <input type="time"  name="time" id="time" class="inputs" placeholder="21:00">
+            </div>
+          </div>
 
 
         </form>
 
-        <button>
+        <button class="buttonReserva">
           <a href="#">Reservar</a> 
         </button>
 

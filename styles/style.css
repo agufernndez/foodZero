@@ -49,8 +49,6 @@ button {
     border: 1px solid var(--blanco);
     border-radius: 4px;
     height: 30px;
-
-
 }
 
 button:hover {
@@ -108,6 +106,7 @@ header {
     display: flex;
     align-items: center;
 }
+
 .leerMas {
     color: var(--marron);
     font-size: 0.6rem;
@@ -184,21 +183,67 @@ i {
     font-style: italic;
 }
 
-/* galeria de fotos */
+/* section galeria de fotos */
 .sectionGaleriaFotos__carrousel {
     display: flex;
+    justify-content: center;
     width: 90vw;
     padding: 0%;
+    gap: 10px;
 }
 
 .galeriaFoto1 {
-    width: 65vw;
+    width: 80vw;
 }
 
+.flecha {
+    width: 20px;
+}
 
+/* section reservas */
+.sectionReservas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 30px; */
+}
 
+.formIndex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 340px;
+    gap: 20px;
+}
 
+.divForm {
+    width: 22vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
 
+.inputs {
+    background:none;
+    border:none;
+    border-bottom: 0.5px solid var(--blanco);
+    text-align: center;
+    color: var(--blanco);
+    padding-bottom: 4px;
+}
+
+.labels {
+    opacity: 0.6;
+    text-align: left;
+    padding-bottom: 10px;
+    font-style: italic;
+}
+
+.buttonReserva {
+    width: fit-content;
+    margin: 25px auto 0;
+}
 
 
 
