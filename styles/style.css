@@ -2,7 +2,14 @@
     --marron: #B5986D;
     --azulOscuro: #021222;
     --blanco: #FFFFFF;
+    --h1: 1.4rem;
+    --h2: 1.2rem;
+    /* --h3: 1.1rem; */
+    --h4: 1.1rem;
+    --h5: 0.9rem
     /* 
+font-family: 'Noto Serif SC', serif;
+
 #F8F8F8
 #FAFAFA*/
 
@@ -14,24 +21,26 @@
 
 body {
     background-color: var(--azulOscuro);
-    font-family: 'Bodoni Moda', serif;
+    font-family: 'Noto Serif SC', serif;
     font-size: 62.5%;
-    /* color: #FAFAFA; */
-    color: #FFFFFF;
-    /* overflow-x:hidden; */
-
+    color: var(--blanco);
+}
+h1 {
+    font-size: var(--h1);
+    font-weight: 200;
+    line-height: 32px;
 }
 
 h2 {
     text-decoration:underline;
-    font-size: 1.6rem;
+    font-size: var(--h2);
     text-align: center;
 }
 
 section {
     padding: 20px;
     /* width: 90vw; */
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 
 }
 
@@ -39,7 +48,9 @@ button {
     background: none;
     border: 1px solid var(--blanco);
     border-radius: 4px;
-    height: 30gitpx;
+    height: 30px;
+
+
 }
 
 button:hover {
@@ -80,7 +91,7 @@ header {
 .sectionPrincipal {
     width: 100vw;
     height: 50vh;
-    padding-top: 10vh ;
+    padding-top: 7vh ;
     background-image: url("../assets/img/index/mainPrincipal.jpg");
     background-size: cover;
     display: flex; 
@@ -88,13 +99,25 @@ header {
     align-items: center;
 }
 
-.sectionPrincipal h1 {
-    font-size: 1.8rem;
-    /* line-height: 32px; */
-}
-
 .sectionPrincipal p {
     margin-bottom: 4vh;
+}
+
+/* section sobre nosotros */
+.leerMasdiv {
+    display: flex;
+    align-items: center;
+}
+.leerMas {
+    color: var(--marron);
+    font-size: 0.6rem;
+    padding-right: 8px;
+    text-decoration: none;
+}
+
+i {
+    font-size: 0.8rem;
+    color: var(--marron);
 }
 
 /* section frase */
@@ -115,7 +138,7 @@ header {
     text-align: center;
     width: 80vw;
     margin: 0 auto;
-    font-size: 1.2rem;
+    font-size: var(--h2);
 
 }
 
@@ -140,22 +163,21 @@ header {
 }
 
 .sectionNuestroMenu__menu h4 {
-    font-size: 1.3rem;
+    font-size: var(--h4);
     font-style: italic;
     text-align: center;
-}
-
-.sectionNuestroMenu__menu h5 {
-    font-size: 1rem;
-    margin: 0;
-
 }
 
 .sectionNuestroMenu__menu article {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+}
 
+.sectionNuestroMenu__menu h5 {
+    font-size: var(--h5);
+    margin: 0;
+    padding-right: 10px;
 }
 
 .sectionNuestroMenu__menu article p {
