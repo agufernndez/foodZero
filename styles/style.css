@@ -35,6 +35,11 @@ h2 {
     text-decoration:underline;
     font-size: var(--h2);
     text-align: center;
+    opacity: 0.9;
+}
+
+p {
+    opacity: 0.9;
 }
 
 section {
@@ -46,24 +51,36 @@ section {
 
 button {
     background: none;
-    border: 1px solid var(--blanco);
+    border: 1px solid var(--marron);
     border-radius: 4px;
     height: 30px;
+
 }
 
 button:hover {
     background-color: var(--marron);
-
+    color: var(--blanco);
 }
 
 button a {
     text-decoration: none;
-    color: var(--blanco);
+    color: var(--marron);
     font-family: 'Bodoni Moda', serif;
+    background: none;
+    font-size: 0.8rem;
+
 }
 
 button a:hover {
-    text-decoration: underline;    
+    text-decoration: underline;   
+    color: var(--blanco);
+
+}
+
+i {
+    font-size: 0.8rem;
+    color: var(--marron);
+    padding: 8px;
 }
 /* inicio del HEADER */
 header {
@@ -82,9 +99,9 @@ header {
 .toggleMenu {
     width: 25px;
 }
-/* fin */
 
 /* inicio del MAIN */
+
 /* sectionPrincipal */
 .sectionPrincipal {
     width: 100vw;
@@ -110,13 +127,7 @@ header {
 .leerMas {
     color: var(--marron);
     font-size: 0.6rem;
-    padding-right: 8px;
     text-decoration: none;
-}
-
-i {
-    font-size: 0.8rem;
-    color: var(--marron);
 }
 
 /* section frase */
@@ -245,20 +256,52 @@ i {
     margin: 25px auto 0;
 }
 
-
-
-
-
-
-
-
-
 /* contactanos */
-/* .sectionContactanos img {
-    width: 70vw;
-} */
 .sectionContactanos {
-    background-image: url("../assets/img/index/contactUs.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sectionContactanos div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 25px;
+}
+
+.sectionContactanos img {
+    width: 50vw;
+}
+
+.sectionContactanos__info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 16px;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+    border-top: 0.5px solid var(--marron);
+    margin: 0 20px;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+}
+
+footer ul li {
+    padding: 10px;
+}
+
+footer ul li a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 0.5rem;
+
 }
