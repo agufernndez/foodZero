@@ -1,0 +1,186 @@
+:root {
+    --marron: #B5986D;
+    --azulOscuro: #021222;
+    --blanco: #FFFFFF;
+    --h1: 1.4rem;
+    --h2: 1.2rem;
+    /* --h3: 1.1rem; */
+    --h4: 1.1rem;
+    --h5: 0.9rem
+    /* 
+font-family: 'Noto Serif SC', serif;
+
+#F8F8F8
+#FAFAFA*/
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../assets/img/contactanos/fondoContactanos.jpg") ;
+    font-family: 'Noto Serif SC', serif;
+    font-size: 62.5%;
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+h1 {
+    font-size: var(--h1);
+    font-weight: 200;
+    line-height: 32px;
+    text-align: center;
+}
+
+h2 {
+    text-decoration:underline;
+    font-size: var(--h2);
+    text-align: center;
+    opacity: 0.9;
+}
+
+p {
+    opacity: 0.9;
+}
+
+/* HEADER */
+header {
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.logo {
+    width: 60px;
+}
+
+.toggleMenu {
+    width: 25px;
+}
+
+/* MAIN */
+main {
+    width: 80vw;
+    /* height: 100vh; */
+    display: flex;
+    margin: 0 auto;
+}
+
+.imgMainContactanos {
+    display: none;
+}
+
+main div {
+    width: 100vw;
+    /* height: 90vh; */
+    margin: 10vh auto;
+    background-color: var(--marron);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    height: 30px;
+    text-align: center;
+    color: var(--marron);
+    border: none;
+    font-family: 'Noto Serif SC', serif;
+    border-radius: 8px;
+
+}
+
+textarea {
+    text-align: center;
+    color: var(--marron);
+    border: none;
+    border-radius: 8px;
+
+}
+
+.button {
+    width: 30vw;
+    margin: 0 auto;
+    background-color: var(--azulOscuro);
+    color: var(--blanco);
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+    border-top: 0.5px solid var(--marron);
+    margin: 0 20px;
+    position: absolute;
+    bottom: 0px;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+}
+
+footer ul li {
+    padding: 10px;
+}
+
+footer ul li a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 0.5rem;
+
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 2.4rem;
+        line-height: 46px;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+
+    /* HEADER */
+    header {
+        padding: 40px 10vw;
+    }
+
+    .logo {
+        width: 90px;
+    }
+    
+    .toggleMenu {
+        width: 30px;
+    }
+
+     /* footer */
+     footer ul li a {
+        font-size: 0.8rem;
+    }
+
+
+}
