@@ -69,7 +69,7 @@ header {
 /* MAIN */
 main {
     width: 80vw;
-    /* height: 100vh; */
+    height: 70vh;
     display: flex;
     margin: 0 auto;
 }
@@ -107,7 +107,7 @@ textarea {
     text-align: center;
     color: var(--marron);
     border: none;
-    border-radius: 8px;
+    /* border-radius: 8px; */
 
 }
 
@@ -119,21 +119,14 @@ textarea {
     border-radius: 8px;
 }
 
-
-
-
-
-
-
-
 /* FOOTER */
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 20px; */
+    padding: 10px 20px;
     border-top: 0.5px solid var(--marron);
-    margin: 0 20px;
+    /* margin: 0 20px; */
     position: absolute;
     bottom: 0px;
 }
@@ -177,8 +170,49 @@ footer ul li a {
         width: 30px;
     }
 
-     /* footer */
-     footer ul li a {
+/* MAIN */
+    main {
+        width: 60vw;
+        margin-top: 16vh;
+    }
+
+    .imgMainContactanos {
+        display: flex;
+        width: 30vw;
+    }
+
+    main div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0 30px 30px;
+        border-radius: 0px;
+        /* border: 6px double #FFFFFF; */
+    }
+
+    input {
+        font-size: 0.8rem;
+        border-radius: 0px;
+
+    }
+
+    textarea {
+        font-size: 0.8rem;
+        border-radius: 0px;
+    }
+
+    .button {
+        width: 8vw;
+        border-radius: 8px;
+    }
+
+     /* FOOTER */
+     footer {
+        width: 100vw;
+     }
+    footer ul li a {
         font-size: 0.8rem;
     }
 

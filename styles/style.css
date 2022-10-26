@@ -300,9 +300,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 20px; */
+    padding: 10px 20px;
     border-top: 0.5px solid var(--marron);
-    margin: 0 20px;
+    /* margin: 0 20px; */
 }
 
 footer ul {
