@@ -14,8 +14,27 @@
   
   <body>
     <header>
-      <img src="./assets/Logo.png" alt="Logo Food Zero" class="logo">
-      <img src="./assets/icon/bx_menu.svg" alt="Toggle Menu" class="toggleMenu">
+
+        <img src="./assets/Logo.png" alt="Logo Food Zero" class="logo">
+        <img src="./assets/icon/bx_menu.svg" alt="Toggle Menu" class="toggleMenu">
+        <!-- ACA PONER EN NAVBAR MOBILE CON LAS SECCIONES DE INICIO - CONTACTANOS - MENU - VINOS & COCTAILS -->
+        <!-- <nav>
+          <ul>
+            <li>
+              <a href="">Inicio</a>
+            </li>
+            <li>
+              <a href="">Contactanos</a>
+            </li>
+            <li>
+              <a href="">Menú</a>
+            </li>
+            <li>
+              <a href="">Vinos & Coctails</a>
+            </li>
+          </ul>
+        </nav> -->
+
 
     </header>
 
@@ -27,7 +46,7 @@
             Pasión asegurada.</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget dolor in felis lobortis gravida et et leo.</p>
           <button>
-            <a href="#">Reservar Ahora</a> 
+            <a href="./index.html#reservas">Reservar Ahora</a> 
           </button>
         </div>
       </section>
@@ -59,10 +78,10 @@
       <section class="section sectionNuestroMenu">
         <img src="./assets/img/index/ourMenu.jpg" alt="Imagen de sectionNuestroMenu" class="fotoMenu">
         <h2>Nuestro Menu</h2>
-        <div>
-          <img src="./assets/icon/leftMenu.svg" alt="">
-          <img src="./assets/icon/rightMenu.svg" alt="">
-        </div>
+        <!-- <div>
+          <img src="./assets/icon/leftMenu.svg" alt="" class="flecha">
+          <img src="./assets/icon/rightMenu.svg" alt="" class="flecha">
+        </div> -->
         <div class="sectionNuestroMenu__menu">
             <h4>Plato Principal</h4>
             <article>
@@ -130,7 +149,7 @@
         </div>
       </section>
 
-      <section class="section sectionReservas">
+      <section class="section sectionReservas" id="reservas">
         <h2>Reservas</h2>
 
         <form action="">
@@ -138,7 +157,7 @@
             <div class="divForm">
               <label for="name" class="labels">Nombre</label>
               <input type="text" name="name" id="name" class="inputs" placeholder="Alejandro">
-          </div>
+            </div>
 
             <div class="divForm">
               <label for="number" class="labels">Telefofono</label>

@@ -83,6 +83,9 @@ i {
     padding: 8px;
 }
 /* inicio del HEADER */
+body {
+    overflow-x: hidden;
+}
 header {
     width: 100vw;
     padding: 20px;
@@ -119,6 +122,13 @@ header {
 }
 
 /* section sobre nosotros */
+
+.sectionSobreNosotros {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+}
+
 .leerMasdiv {
     display: flex;
     align-items: center;
@@ -137,6 +147,8 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     /* gap: 300px; */
+    display: flex;
+    align-items: center;
 }
 
 .sectionFrase img {
@@ -216,7 +228,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* gap: 30px; */
+    
 }
 
 .formIndex {
@@ -246,7 +258,8 @@ header {
 
 .labels {
     opacity: 0.6;
-    text-align: left;
+    text-align: center;
+    text-decoration: underline;
     padding-bottom: 10px;
     font-style: italic;
 }
@@ -303,5 +316,149 @@ footer ul li a {
     color: var(--blanco);
     text-decoration: none;
     font-size: 0.5rem;
+
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 2.4rem;
+        line-height: 46px;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+
+    button {
+        height: 35px;
+    }
+    
+    button a {
+        font-size: 1rem;
+    }
+   
+    i {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    section {
+        padding: 20px 10vw;
+        font-size: 1rem;    
+    }    
+
+
+    /* HEADER */
+    header {
+        padding: 40px 10vw;
+    }
+
+    .logo {
+        width: 90px;
+    }
+    
+    .toggleMenu {
+        width: 30px;
+    }
+
+        /* MAIN */
+    /* sectionPrincipal */
+    .sectionPrincipal {
+        height: 100vh;
+    }
+
+    .sectionPrincipal p {
+        margin-bottom: 8vh;
+        width: 60vw;
+    }
+
+    /* section sobre nosotros */
+
+    .sectionSobreNosotros {
+        height: 45vh;
+    }
+
+    .leerMas {
+        font-size: 0.8rem;
+    }
+
+    /* section frase */
+    .sectionFrase {
+        height: 55vh;
+    }
+
+    .sectionFrase img {
+        width: 60px;
+    }
+
+    .sectionFrase div {
+        width: 60vw;
+        font-size: 1.5rem;
+    }
+
+    .sectionFrase p:nth-child(3) {
+        font-size: 1rem;
+    }
+
+    /* section menu */
+    .sectionNuestroMenu h2 {
+        text-align: start;
+    }
+
+    .sectionNuestroMenu img {
+        margin-top: 10vh;
+        display: flex;
+        width: 80vw;
+        z-index: -1;
+        position: absolute;
+        right: -30vw;
+        border: 6px double var(--marron);
+        
+    }
+
+    .sectionNuestroMenu__menu {
+        width: 40vw;
+        margin: 20vh;
+    }
+
+    .sectionNuestroMenu__menu h4 {
+        text-decoration: underline;
+
+    }
+
+    /* section galeria de fotos */
+    .sectionGaleriaFotos {
+        padding: 0;
+
+    }
+
+    .sectionGaleriaFotos__carrousel {
+        margin: 0 auto;
+    }
+
+    .galeriaFoto1 {
+        width: 60vw;
+        
+    }
+
+    .flecha {
+        width: 30px;
+    }
+
+    /* section reservas */
+    .formIndex {
+        width: 70vw;
+        margin: 0 auto;
+    }
+
+    /* contactanos */
+    .sectionContactanos img {
+        width: 25vw;
+    }
+
+    /* footer */
+    footer ul li a {
+        font-size: 0.8rem;
+    }
 
 }
