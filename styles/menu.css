@@ -1,0 +1,222 @@
+:root {
+    --marron: #B5986D;
+    --azulOscuro: #021222;
+    --blanco: #FFFFFF;
+    --h1: 1.4rem;
+    --h2: 1.2rem;
+    /* --h3: 1.1rem; */
+    --h4: 1.1rem;
+    --h5: 0.9rem
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--azulOscuro);
+    font-family: 'Noto Serif SC', serif;
+    font-size: 62.5%;
+    color: var(--blanco);
+}
+
+/* inicio del HEADER */
+
+header {
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.logo {
+    width: 60px;
+}
+
+.toggleMenu {
+    width: 25px;
+}
+
+/* MAIN */
+
+.section {
+    margin: 0 20px;
+}
+
+/* section titulo */
+.sectionTitulo {
+    height: 35vh;
+    background-image: url("../assets/img/menu/sectionTitulo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.3rem;
+}
+
+/* section links */
+ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+a {
+    color: var(--blanco);
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.active {
+    color: var(--marron);
+    text-decoration: underline;
+}
+
+/* section menu sombra */
+.sectionMenuSombra div {
+    margin-top: 40px;
+}
+
+.h2Principal {
+    text-decoration: underline;
+    color: var(--marron);
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.h2Sombra {
+    opacity: 0.1;
+    font-size: 2.3rem;
+    /* position: absolute; */
+    /* top: 250px; */
+    position: relative;
+    bottom: 50px;
+}
+
+/* section menues */
+.sectionMenues {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.sectionMenues article {
+    margin: 40px 0;
+}
+
+.sectionMenues figure {
+    width: 80vw;
+    border: 1px solid var(--marron);
+    display: flex;
+    margin: 10px 0;
+}
+
+.sectionMenues img {
+    width: 65vw;
+    margin: 10px auto;
+    /* align-self: center; */
+    /* justify-items: center; */
+}
+
+.sectionMenues article div {
+    text-align: center;
+}
+
+.sectionMenues h3 {
+    color: var(--marron);
+    padding: 4px;
+}
+
+.sectionMenues article div a {
+    text-decoration: underline;
+
+}
+
+/* section reservas */
+.sectionReservas h2 {
+    text-align: center;
+    margin: 20px;
+}
+.sectionReservas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.formIndex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 340px;
+    gap: 20px;
+}
+
+.divForm {
+    width: 22vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.inputs {
+    background:none;
+    border:none;
+    border-bottom: 0.5px solid var(--blanco);
+    text-align: center;
+    color: var(--blanco);
+    padding-bottom: 4px;
+}
+
+.labels {
+    opacity: 0.6;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 10px;
+    font-style: italic;
+}
+
+.buttonReserva {
+    width: fit-content;
+    margin: 25px auto 0;
+}
+
+
+
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-top: 0.5px solid var(--marron);
+    /* margin: 0 20px; */
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+}
+
+footer ul li {
+    padding: 10px;
+}
+
+footer ul li a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 0.5rem;
+
+}
+
+@media screen and (min-width: 768px) {}
