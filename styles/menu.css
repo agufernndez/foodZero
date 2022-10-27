@@ -144,11 +144,11 @@ a {
     text-align: center;
     margin: 20px;
 }
+
 .sectionReservas {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .formIndex {
@@ -186,12 +186,18 @@ a {
 
 .buttonReserva {
     width: fit-content;
-    margin: 25px auto 0;
+    margin: 25px auto 16px;
+    padding: 8px;
+    background: none;
+    border: 1px solid var(--marron);
+    border-radius: 4px;
+    height: 30px;
 }
 
-
-
-
+.buttonReserva:hover {
+    background-color: var(--marron);
+    color: var(--blanco);
+}
 
 /* FOOTER */
 footer {
@@ -219,4 +225,124 @@ footer ul li a {
 
 }
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    /* HEADER */
+    header {
+        padding: 40px 10vw;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    .toggleMenu {
+        width: 30px;
+    }
+
+    .section {
+        margin: 0 80px;
+    }
+
+    /* section titulo */
+
+    .sectionTitulo h1 {
+        font-size: 3rem;
+    }
+
+    /* section links */
+    .sectionLinks {
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    .sectionLinks a {
+        font-size: 0.9rem;
+    }
+
+    /* section menu sombra */
+
+    .sectionMenuSombra div {
+        margin-top: 60px;
+    }
+
+    .h2Principal {
+        font-size: 2rem;
+    }
+
+    .h2Sombra {
+        font-size: 3rem;
+        bottom: 65px;
+    }
+
+    /* section menues */
+    .sectionMenues {
+        width: 90vw;
+        display: flex;
+        flex-wrap: wrap;
+        /* margin: 0 auto; */
+    }
+
+    .sectionMenues article {
+        width: 40vw;
+        margin: 0 auto 40px;
+    }
+
+    .sectionMenues figure {
+        width: 35vw;
+    }
+
+    .sectionMenues img {
+        width: 25vw;
+    }
+
+    .sectionMenues h3 {
+        font-size: 1.1rem;
+    }
+    
+    .sectionMenues article div a {
+        font-size: 0.8rem;
+    }
+
+    /* section reservas */
+    .sectionReservas h2 {
+        font-size: 1.6rem;
+    }
+
+    .formIndex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90vw;
+        gap: 20px;
+    }
+
+    .inputs {
+        font-size: 1rem;
+        padding-bottom: 4px;
+    }
+    
+    .labels {
+        font-size: 0.8rem;
+    }
+
+    .buttonReserva {
+        font-size: 0.8rem;
+        padding: 8px;
+        height: 35px;
+    }
+
+     /* footer */
+     footer ul li a {
+        font-size: 0.8rem;
+        /* opacity: 1; */
+    }
+
+    
+
+
+
+
+
+
+
+}
