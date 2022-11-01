@@ -181,6 +181,11 @@ header {
     padding: 20px  ;
 }
 
+.sectionNuestroMenu h2 a {
+    color: var(--blanco);
+    
+}
+
 .sectionNuestroMenu__menu h4 {
     font-size: var(--h4);
     font-style: italic;
